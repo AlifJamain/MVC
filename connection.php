@@ -8,6 +8,6 @@ class DB
         $username = "root";
         $password = "";
 
-        return new PDO("mysql:host=$servername;dbname=database", $username, $password);
+        return new PDO("mysql:host=$servername;dbname=example", $username, $password);
     }
 }
