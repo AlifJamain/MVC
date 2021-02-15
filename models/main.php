@@ -21,10 +21,5 @@ class Main
             echo "<script type='text/javascript'> document.location = '?'; </script>";
         }
     }
-
-    public function signin()
-    {
-
-        
-    }
+    
 }
