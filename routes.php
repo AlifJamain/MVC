@@ -9,6 +9,9 @@ function call($controller, $action, $params = null)
         case 'mains':
             $controller = new MainsController();
             break;
+        case 'homes':
+            $controller = new HomesController();
+            break;
     }
 
     if ($params  != NULL) {
@@ -21,7 +24,8 @@ function call($controller, $action, $params = null)
 }
 
 $controllers = array(
-    'mains' => ['index']
+    'mains' => ['index', 'register'],
+    'homes' => ['index']
 );
 
 if (array_key_exists($controller, $controllers)) {
